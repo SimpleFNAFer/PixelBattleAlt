@@ -1,0 +1,12 @@
+﻿body {
+}
+
+#BattleField {
+    height: 450px;
+    width: 900px;
+    border: none;
+}
+
+#Reselect {
+    visibility: hidden;
+}

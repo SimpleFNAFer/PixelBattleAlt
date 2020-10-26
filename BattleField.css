@@ -1,0 +1,15 @@
+﻿body {
+    margin: 0;
+}
+
+#Field {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin: 5px auto auto 5px;
+}
+
+#Print {
+    background-color: darkolivegreen;
+    color: aliceblue;
+}

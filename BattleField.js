@@ -6,6 +6,7 @@ var y = 0;
 var xtemp = 0;
 var ytemp = 0;
 var isSelected = false;
+localStorage.clear();
 
 canv.width = 1000;
 canv.height = 1000;
@@ -67,12 +68,13 @@ canv.addEventListener("mousedown", function (e) {
     ctx.strokeStyle = '#333333';
     ctx.strokeRect(x, y, 10, 10);
     isSelected = true;
+    localStorage.setItem("isSelected", true);
     //xtemp = x;
     //ytemp = y;
 })
 
 if (isSelected) {
-    canv.innerHTML = "isSelected"
+    localStorage.setItem("isSelected", true);
 }
 
 /*ctx.strokeStyle = 'magenta';

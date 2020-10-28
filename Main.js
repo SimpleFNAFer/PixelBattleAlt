@@ -1,8 +1,8 @@
-﻿var field = document.getElementById('BattleField')
-var canv = field.contentWindow.document.getElementById('Field')
-var ctx = canv.getContext('2d');
-var res = document.getElementById('Reselect');
+﻿var res = document.getElementById('Reselect');
 
-if (canv.innerHTML == "isSelected") {
-    res.style.visibility = "visible";
-}
+document.addEventListener('mousemove', function () {
+    if (localStorage.getItem("isSelected")) {
+        res.style.visibility = "visible";
+    }
+})
+
